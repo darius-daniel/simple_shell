@@ -7,7 +7,7 @@
 #include <string.h>
 
 /* maximum tokens allowed */
-define MAX_TOKENS 10
+#define MAX_TOKENS 10
 
 char *_strtok(char *BUFFER_STR, const char *delims);
 ssize_t _getline(char **lineptr, size_t *n, FILE *stream);
