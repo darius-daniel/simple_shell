@@ -1,10 +1,12 @@
 #ifndef __MAIN_H__
 #define __MAIN_H__
 
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
 #include <string.h>
+#include <sys/wait.h>
+#include <unistd.h>
 
 /* maximum tokens allowed */
 #define MAX_TOKENS 10

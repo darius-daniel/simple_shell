@@ -11,6 +11,7 @@
   */
 char *_strtok(char *BUFFER_STR, const char *delims)
 {
+	char *start;
 	/*
 	 * we initialise a static variable to store the current position in the
 	 * string being tokenised, so subsequent calls to the function can
@@ -24,7 +25,7 @@ char *_strtok(char *BUFFER_STR, const char *delims)
 		return (NULL);
 
 	/* store the current position in the string being tokenised */
-	char *start = tmp_str;
+	start = tmp_str;
 
 	/*
 	 * we use the strpbrk() to find the first occurence of any of
