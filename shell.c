@@ -12,7 +12,7 @@ char *get_command(char *str, char *delim)
 {
 	char *prev, *cur;
 
-	cur = strtok(str, delim);
+	cur = _strtok(str, delim);
 	while (cur != NULL)
 		prev = cur, cur = strtok(NULL, delim);
 
