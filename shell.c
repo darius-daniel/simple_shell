@@ -14,7 +14,7 @@ char *get_command(char *str, char *delim)
 
 	cur = _strtok(str, delim);
 	while (cur != NULL)
-		prev = cur, cur = strtok(NULL, delim);
+		prev = cur, cur = _strtok(str, delim);
 
 	free(cur);
 	return (prev);

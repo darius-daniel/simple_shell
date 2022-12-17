@@ -1,10 +1,13 @@
 #ifndef __MAIN_H__
 #define __MAIN_H__
 
+#include <dirent.h>
+#include <errno.h>
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <sys/stat.h>
 #include <sys/wait.h>
 #include <unistd.h>
 
